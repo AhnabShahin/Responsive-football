@@ -24,6 +24,13 @@ nav{
 .container{
     width: 1160px;
 }
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu>i{
+    font-size: 40px;
+}
 .menu{
     display: flex;
 }
@@ -180,7 +187,6 @@ nav{
 
 }
 .highlight-img{
-    position: relative;
     width: 567px;
     height: 427px;
 
@@ -206,7 +212,135 @@ nav{
     width: 150px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .social-icons i{
-    color: #969BAB;
+    padding: 4px;
+    background-color: #969BAB;;
+    color: #65666a;
+    border-radius: 50%;
+}
+/* footer */
+footer{
+    padding: 5px 0;
+    background-color:#2D25A0; ;
+}
+.copy-right{
+    display: flex;
+    justify-content: center;
+
+    margin-right: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+/* Responsive for mobile */
+@media only screen and (max-width: 767px) {
+    .container{
+        width: 300px;
+    }
+    .menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .highlight-section {
+        margin: 65px 0px 158px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-title {
+        width: 300px;
+        font-size: 40px;
+    }
+    .highlight{
+        display: flex;
+        flex-direction: column;
+    }
+    .highlight-img{
+        width: 300px;
+        height: auto;
+    }
+    .highlight-img img{
+        margin-top: 60px;
+        width: 300px;
+        height: auto;
+
+    }
+    .banner-img {
+        margin-top: 40px;
+        width: 300px;
+        height: auto;
+    }
+    .highlight-content{
+        width: auto;
+        height: auto;
+    }
+    .highlight-title{
+        width: auto;
+        height: auto;
+    }
+    .highlight-discription{
+        width: auto;
+        height: auto;
+    }
+    .logo {
+        width: 300px;
+    }
+    .blog{
+        width: 250px;
+    }
+}
+/* Respocsive for tab */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .container{
+        width: 750px;
+    }
+    .menu a{
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 27px;
+    }
+    .banner-title {
+        width: 300px;
+        font-size: 40px;
+    }
+    .banner-img {
+          height: auto;
+    }
+    .highlight-title, .highlight-discription{
+        width: 350px;
+        height: auto;
+    }
+    .highlight-title{
+        font-size: 30px;
+    }
+    .highlight-img{
+        width: 400px;
+        height: auto;
+    
+    }
+    .highlight-img img{
+        width: 100%;
+        height: auto;
+    
+    }
+
 }
